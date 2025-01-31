@@ -1,0 +1,300 @@
+.home-container {
+    position: relative;
+    max-width: 100vw;
+    height:380px;
+}
+.home-container:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100px;
+    left: 0;
+    bottom: -100px;
+    z-index: 0;
+    background: linear-gradient(to bottom, #0000003b, transparent);
+}
+header {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    padding-top: 3px;
+    left: 0;
+}
+/*
+nav {
+    background: #1c174fd1;
+}
+*/
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner:hover {
+    cursor: grab;
+}
+.carousel-inner:active {
+    cursor: grabbing;
+}
+.carousel-caption {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    position: relative;
+    margin: 10px auto;
+}
+.carousel-item {
+    overflow: hidden;
+    height:380px;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+}
+.text-mega-shadow {
+    text-shadow: 0 1px 0 #aaa, 0 2px 0 #aaa, 0 3px 0 #aaa, 1px 0 0 #aaa, 1px 1px 0 #aaa, 1px 2px 0 #aaa, 1px 3px 0 #aaa, 0 4px 15px rgba(0,0,0,.5);
+}
+.carousel .title {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2.3rem;
+}
+.carousel .subtitle {
+    font-size: 32px;
+    color: #3aff00;
+    text-shadow: 0 1px 0 #259803, 0 2px 0 #259803, 0 3px 0 #259803, 1px 0 0 #259803, 1px 1px 0 #259803, 1px 2px 0 #259803, 1px 3px 0 #259803, 0 6px 25px rgba(0,0,0,.6);
+}
+.carousel-caption p {
+    line-height: 1.4;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px auto;
+    text-shadow: 0 0 20px #00000070;
+}
+
+ol.carousel-indicators {
+    left: 50%;
+    transform: translateX(calc(-50% - 40px));
+    bottom: 20px;
+    right: auto;
+    margin: 0;
+}
+
+ol.carousel-indicators li {
+    transition: all .3s;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+}
+/* -------------------------------------------------- */
+
+.animated{
+    animation-duration:1s;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    -ms-animation-duration:1s;
+    -o-animation-duration:1s;
+    visibility:visible;
+    opacity:1;
+    transition:all 0.3s ease;
+}
+
+.flipcard {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.flipper {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    z-index: 11;
+    margin-top: 60px;
+    height: 100%;
+    display: block;
+}
+.flipper.flip .flipcard {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.flipper .front,.flipper .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.flipper-slide {
+    width: 250px;
+    margin: 0 auto;
+    min-height: 330px;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 15px;
+    background: #1dab3e;
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+}
+.flipper .front {
+    z-index: 2;
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+}
+.flipper-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.front-data {
+    background: #00000052;
+    position: relative;
+    margin: 0 10px 2px;
+    font-size: 22px;
+    border-radius: 15px;
+}
+.tournament_amount {
+    font-size: 36px;
+    line-height: 37px;
+}
+.front-data .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 16px;
+}
+.counter-text.font-weight-bold {
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 200;
+    background: #0e5a20;
+    border-radius: 10px 10px 0 0;
+}
+.flipper .back {
+    border-radius: 20px;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    letter-spacing: -0.4px;
+    padding: 15px;
+    text-align: left;
+}
+.tour_info {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    background: #00000047;
+    text-align: center;
+    padding: 10px;
+}
+.tour_info a:hover{
+    color: #000000;
+}
+.flipper .goback {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: center;
+}
+
+.current_tournament {
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    width: 155px;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+    padding: 5px 10px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    background: #00000052;
+}
+.slider-loyalty .subtitle {
+    color: #00d0ff;
+    text-shadow: 0 1px 0 #286d86, 0 2px 0 #286d86, 0 3px 0 #286d86, 1px 0 0 #286d86, 1px 1px 0 #286d86, 1px 2px 0 #286d86, 1px 3px 0 #286d86, 0 6px 25px rgba(0,0,0,.6);
+}
+.slider-loyalty .counter-text.font-weight-bold {
+    background: #00000091;
+    width: 244px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.slider-loyalty .counter-text.font-weight-bold {
+    background: #00000091;
+    width: 244px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.slider-loyalty .counter-time {
+    font-size: 32px;
+}
+.slider-loyalty span.text-muted {
+    color: #ccc !important;
+    text-shadow: 0 1px 0 #6f6f6f, 0 2px 0 #6f6f6f, 0 3px 0 #6f6f6f, 1px 0 0 #6f6f6f, 1px 1px 0 #6f6f6f, 1px 2px 0 #6f6f6f, 1px 3px 0 #17051f, 0 4px 15px rgba(0,0,0,.5);
+}
+@media(max-width: 1000px){
+    .home-container {
+        height: 450px;
+    }
+    .carousel-item {
+        height: 480px;
+    }
+    ol.carousel-indicators {
+        display: none;
+    }
+    .carousel{
+        position: relative;
+        margin-top: -80px;
+    }
+    .carousel .container  {
+        padding-top: 40px;
+    }
+    .carousel-caption {
+        position: relative;
+    }
+    .flipper {
+        margin-top: 0;
+    }
+}
+.carousel-item .container.mx-auto.row {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0;
+}

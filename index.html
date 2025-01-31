@@ -26,6 +26,47 @@
 <meta name="yandex-verification" content="64f59478adedff0d">
 <meta name="google-site-verification" content="b3Ifbm8Ud0CXFgdNOP1ZhMev8PSr5pzaAHRdakGp898">
 </head>
+	<script>
+
+// Задайте функции dataLayer и gtag.
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+// Задайте статус согласия по умолчанию для отдельных регионов так, как вам нужно.
+
+gtag('consent', 'default', {
+
+'ad_storage': 'denied',
+
+'ad_user_data': 'denied',
+
+'ad_personalization': 'denied',
+
+'analytics_storage': 'denied',
+
+'regions':[<list of ISO 3166-2 region codes>]
+
+});
+
+// Задайте статус согласия по умолчанию для всех остальных регионов так, как вам нужно.
+
+gtag('consent', 'default', {
+
+'ad_storage': 'denied',
+
+'ad_user_data': 'denied',
+
+'ad_personalization': 'denied',
+
+'analytics_storage': 'denied'
+
+});
+
+</script>
+
+<!-- PASTE YOUR COOKIEHUB CMP CODE SNIPPET HERE -- >
 <body class="new-design scrolled  msb-x" data-mobile="" data-game="main">
     <div class="loading-overlay d-none">
         <div class="loading-logo"></div>

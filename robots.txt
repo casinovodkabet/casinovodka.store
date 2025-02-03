@@ -1,16 +1,10 @@
 User-agent: *
-Disallow: /go.html.htm
-Disallow: /img/
-Disallow: /css2?family=Inter:wght@200;300;400;600;700&display=swap
-Disallow: /bootstrap.min.css
-Disallow: /animations-extended.min.css
-Disallow: /carousel.css
-Disallow: /casino_min.css
-Disallow: /app.css
-Disallow: /noty.css
-Disallow: /bootstrap-select.min.css
-Disallow: /animations-extended.min.css
-Disallow: /jquery.min.js.%D0%91%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE:%20Le%20Chat
-Disallow: /watch/
+Allow: /
 
+# Карты сайта для поисковиков
 Sitemap: https://www.casinovodka.store/sitemap.xml
+Sitemap: https://casinovodka.store/sitemap.xml
+
+# Указание основного хоста (только для Яндекса)
+Host: https://casinovodka.store
+Host: https://www.yandex.ru/search/?text=casino+vodka&lr=1&search_source=chromentp_desktop&p=1&rnd=1

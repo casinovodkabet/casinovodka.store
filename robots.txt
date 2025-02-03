@@ -5,6 +5,3 @@ Allow: /
 Sitemap: https://www.casinovodka.store/sitemap.xml
 Sitemap: https://casinovodka.store/sitemap.xml
 
-# Указание основного хоста (только для Яндекса)
-Host: https://casinovodka.store
-Host: https://www.yandex.ru/search/?text=casino+vodka&lr=1&search_source=chromentp_desktop&p=1&rnd=1
